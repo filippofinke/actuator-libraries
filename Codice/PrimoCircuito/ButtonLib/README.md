@@ -29,8 +29,8 @@ Ritorna 1 in caso di pottone premuto altrimenti 0.
 
 ## Esempi
 
-* [ButtonExample](examples) - Esempio di utilizzo della libreria.
+* [ButtonExamples](examples) - Esempi di utilizzo della libreria.
 
 
-## Authors
+## Autore
 * [Filippo Finke](https://github.com/filippofinke)
