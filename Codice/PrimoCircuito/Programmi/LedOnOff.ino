@@ -29,8 +29,9 @@ void loop() {
   /* Prendo lo stato del bottone */
   bool state = b.getState();
   /* Se il bottone è premuto lo accendo, sennò lo spengo. */
-  if(state)
+  if(state) {
     led.on();
-   else
+  } else {
     led.off();
+  }
 }
