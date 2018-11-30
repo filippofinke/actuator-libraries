@@ -4,6 +4,11 @@
  * @Last modified by:   filippofinke
  * @Last modified time: 30.11.2018
  */
+ /*
+ Descrizione:
+ Se il bottone è premuto il led lampeggia.
+ Appena viene rilasciato il bottone il led viene spento.
+ */
 
 /* Includo la libreria button */
 #include <button.h>
