@@ -2,7 +2,7 @@
  * @Author: filippofinke
  * @Date:   23.11.2018
  * @Last modified by:   filippofinke
- * @Last modified time: 23.11.2018
+ * @Last modified time: 30.11.2018
  */
 #include "Arduino.h"
 #include "Led.h"
@@ -39,6 +39,14 @@ void Led::off()
 void Led::toggle()
 {
   digitalWrite(_pin, !digitalRead(_pin));
+}
+
+/**
+ * Metodo che imposta lo stato del led.
+ */
+void Led::setState(bool state)
+{
+  digitalWrite(_pin, state);
 }
 
 /**

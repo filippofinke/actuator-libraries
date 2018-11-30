@@ -2,7 +2,7 @@
  * @Author: filippofinke
  * @Date:   23.11.2018
  * @Last modified by:   filippofinke
- * @Last modified time: 23.11.2018
+ * @Last modified time: 30.11.2018
  */
 
 /**
@@ -40,4 +40,8 @@ void loop() {
   delay(1000);
   //Stampo lo stato del led, quindi 1.
   Serial.println(led.getState());
+  //Aspetto 1 secondo.
+  delay(1000);
+  //Spengo il led.
+  led.setState(LOW);
 }
