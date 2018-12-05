@@ -63,7 +63,7 @@
                     <task id="50" name="Testing circuito" color="#85acc0" meeting="false" start="2018-12-07" duration="1" complete="0" thirdDate="2018-10-24" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
-            <task id="7" name="Testing circuito" meeting="false" start="2018-11-14" duration="8" complete="0" expand="true">
+            <task id="7" name="Consegna" color="#000000" meeting="false" start="2018-11-14" duration="8" complete="0" thirdDate="2018-11-14" thirdDate-constraint="0" expand="true">
                 <task id="17" name="Documentazione" color="#8cb6ce" meeting="false" start="2018-11-14" duration="8" complete="0" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true"/>
                 <task id="20" name="Preparazione presentazione" color="#8cb6ce" meeting="false" start="2018-11-14" duration="3" complete="0" thirdDate="2018-11-21" thirdDate-constraint="0" expand="true"/>
             </task>
