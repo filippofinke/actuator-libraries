@@ -9,7 +9,7 @@ Libreria LedLib, permette di semplificare l'utilizzo di led attraverso arduino.
 ### Utilizzo
 - Importare la Libreria
 ```#include <led.h>```
-- Istanziare un oggetto di tipo Button
+- Istanziare un oggetto di tipo Led
 ```Led led(PIN);```
 
 ### Metodi
