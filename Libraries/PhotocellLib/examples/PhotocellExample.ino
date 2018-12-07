@@ -29,5 +29,5 @@ void loop() {
   //Ricavo la luminosità.
   int lux = photocell.getLux();
   //Stampo nella console seriale la luminosità.
-  Serial.println(led.getState());
+  Serial.println(lux);
 }
