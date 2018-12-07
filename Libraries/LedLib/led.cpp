@@ -54,7 +54,7 @@ void Led::setState(bool state)
  */
 void Led::setAnalogState(int value)
 {
-  analogWrite(_ping, value);
+  analogWrite(_pin, value);
 }
 
 /**
