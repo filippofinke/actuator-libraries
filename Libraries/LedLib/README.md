@@ -37,10 +37,15 @@ void Led::toggle()
 Permette di invertire lo stato del led.
 ```
 
-bool Led::setState(bool state)
+void Led::setState(bool state)
 
 ```
 Permette di impostare lo stato del led.
+```
+void Led::setState(int value)
+
+```
+Permette di impostare lo stato del led in modo analogico.
 ```
 
 bool Led::getState()

@@ -50,6 +50,14 @@ void Led::setState(bool state)
 }
 
 /**
+ * Metodo che imposta lo stato del led in modo analogico.
+ */
+void Led::setAnalogState(int value)
+{
+  analogWrite(_ping, value);
+}
+
+/**
  * Metodo che ricava lo stato del led.
  * @return bool 1 se acceso altrimenti 0.
  */
