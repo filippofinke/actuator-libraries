@@ -4,6 +4,11 @@
  * @Last modified by:   filippofinke
  * @Last modified time: 07.12.2018
  */
+ /*
+ Descrizione:
+ Accende il led solamente se la fotocellula ritorna un valore
+ di luminosità elevato.
+ */
 
 /**
  * Includo le librerie.
