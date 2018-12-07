@@ -20,14 +20,17 @@
  * Istanzio un oggetto di tipo Photocell.
  */
 Photocell photocell(4);
+
 /**
  * Istanzio un oggetto di tipo Led.
  */
 Led led(1);
+
 /**
  * Imposto un valore minimo di luminosità della resistenza.
  */
 int minLux = 0;
+
 /**
  * Imposto un valore massimo di luminosità della resistenza.
  */

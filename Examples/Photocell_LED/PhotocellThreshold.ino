@@ -20,10 +20,12 @@
  * Istanzio un oggetto di tipo Photocell.
  */
 Photocell photocell(4);
+
 /**
  * Istanzio un oggetto di tipo Led.
  */
 Led led(1);
+
 /**
  * Imposto una soglia dopo il quale accendere il led.
  */
