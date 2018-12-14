@@ -6,7 +6,7 @@
  */
  /*
  Descrizione:
- Mostra il sfarfallio del cursore.
+ Mostra lo sfarfallio del cursore.
  */
 /**
  * Includo le librerie.
@@ -35,11 +35,11 @@ void setup() {
  * Metodo che viene eseguito all'infinito.
  */
  void loop() {
-   //Disabilito il sfarfallio del cursore.
+   //Disabilito lo sfarfallio del cursore.
    lcd.noBlink();
    //Stampo all'interno del display la scritto "Non blinka!" e aspetto 5 secondi.
    printMessage("Non blinka!", 5);
-   //Abilito il sfarfallio del cursore.
+   //Abilito lo sfarfallio del cursore.
    lcd.blink();
    //Stampo all'interno del display la scritto "Blinka!" e aspetto 5 secondi.
    printMessage("Blinka!", 5);
