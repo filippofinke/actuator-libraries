@@ -5,3 +5,4 @@ toggle  KEYWORD2
 setState KEYWORD2
 setAnalogState KEYWORD2
 getState  KEYWORD2
+getAnalogState KEYWORD2
