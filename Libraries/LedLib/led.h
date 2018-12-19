@@ -18,6 +18,7 @@
      void setState(bool state);
      void setAnalogState(int value);
      bool getState();
+     int getAnalogState();
    private:
      int _pin;
  };
