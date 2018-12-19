@@ -65,3 +65,14 @@ bool Led::getState()
 {
   return digitalRead(_pin);
 }
+
+/**
+ * Restituisce il valore dell'intensità del LED da 0 a 255, dove 0 significa che
+ * il LED è completamente spento e 255 significa che il LED è acceso alla
+ * massima intensità
+ * @return un valore da 0 a 255 che simboleggia il valore dell'intensità del LED
+ */
+int Led::getAnalogState()
+{
+  return analogRead(_pin);
+}
