@@ -54,6 +54,11 @@ bool Led::getState()
 Permette di ricavare lo stato del led.
 Ritorna 1 in caso il led sia acceso altrimenti 0.
 ```
+int Led::getAnalogState()
+
+```
+Permette di ricavare lo stato del led in modo analogico.
+Ritorna un valore da 0 (spento) a 255 (acceso all'intensità massima).
 
 ## Esempi
 
