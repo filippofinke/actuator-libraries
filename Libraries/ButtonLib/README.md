@@ -22,10 +22,9 @@ Metodo costruttore con un parametro.
 pin, il pin del bottone.
 ```
 bool Button::getState()
-
 ```
 Permette di ricavare lo stato del bottone.
-Ritorna 1 in caso di pottone premuto altrimenti 0.
+Ritorna 1 in caso il bottone sia premuto altrimenti 0.
 
 ## Esempi
 
