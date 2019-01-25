@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>LCDHelloWorld Guida</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filippo Finke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Esempio LCDHelloWorld</h1>
+    <hr>
+    <h2>Descrizione</h2>
+    <p>
+      Circuito che permette di mostrare del testo all'interno del display LCD.
+    </p>
+    <hr>
+    <h2>Materiale</h2>
+    <ul>
+      <li>Un Digispark</li>
+      <li>Un LCD</li>
+      <li>Uno shift register</li>
+    </ul>
+    <hr>
+    <h2>Schema</h2>
+    <h3>Descrizione del funzionamento</h3>
+    <p>All’interno del circuito sono presenti due componenti:
+1 display a cristalli liquidi (LCD) e 1 shift register.
+Lo shift register viene alimentato dal digispark ed è
+collegato ai relativi pin SCL(“P2”) e SDA(“P0”).
+Mentre il display LCD è collegato interamente allo shift
+register. Il display LCD stampa la scritta "Hello World".</p>
+    <img src="../../Images/Circuit diagrams/LCD_bb.svg" alt="LCD">
+    <hr>
+    <h2>Codice</h2>
+    <pre>
+/**
+ * Includo le librerie.
+ */
+#include &#x3C;TinyWireM.h&#x3E;
+#include &#x3C;LiquidCrystal_I2C.h&#x3E;
+
+/**
+ * Istanzio un oggetto di tipo LCD all&#x27;indirizzo 0x27, con 16 caratteri e due righe.
+ */
+LiquidCrystal_I2C lcd(0x27,16,2);
+
+/**
+ * Metodo di setup, viene eseguito una sola volta.
+ */
+void setup() {
+  //Avvio la comunicazione I2C.
+  TinyWireM.begin();
+  //Preparo il display LCD.
+  lcd.init();
+  //Accendo la retroilluminazione.
+  lcd.backlight();
+  //Stampo all&#x27;interno del display LCD la scritta &#x22;Hello World!&#x22;
+  lcd.print(&#x22;Hello world!&#x22;);
+}
+
+/**
+ * Metodo che viene eseguito all&#x27;infinito.
+ */
+void loop() {
+
+}
+    </pre>
+  </body>
+</html>
