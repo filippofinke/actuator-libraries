@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>LedFlickering Guida</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filippo Finke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Esempio LedFlickering</h1>
+    <hr>
+    <h2>Descrizione</h2>
+    <p>
+      Circuito nel quale viene mostrato l'utilizzo di un bottone per fare lampeggiare un led.
+    </p>
+    <hr>
+    <h2>Materiale</h2>
+    <ul>
+      <li>Un Digispark</li>
+      <li>Un led</li>
+      <li>Una resistenza da 330Ω</li>
+      <li>Una resistenza da 10KΩ</li>
+    </ul>
+    <hr>
+    <h2>Schema</h2>
+    <h3>Descrizione del funzionamento</h3>
+    <p>All’interno del circuito sono presenti quattro componenti: 1 bottone, 1 LED e 2 resistenze. Il bottone è in pull-down tramite una resistenza da 10kΩ, il suo stato viene letto attraverso il pin “P0” del micro controllore. Il LED è attaccato al pin “P1” del Digispark attraverso una resistenza da 330Ω. Quando il bottone viene premuto il LED al pin "P1" inizia ad accendersi e spegnersi ad un intervallo di 100 millisecondi. Appena il bottone viene rilasciato il LED viene spento.</p>
+    <img src="../../Images/Circuit diagrams/ButtonLed_bb.svg" alt="ButtonLed">
+    <hr>
+    <h2>Codice</h2>
+    <pre>
+/* Includo la libreria button */
+#include &lt;button.h&gt;
+/* Includo la led button */
+#include &lt;led.h&gt;
+
+/* Istanzio un oggetto di tipo led */
+Led led(1);
+/* Istanzio un oggetto di tipo button */
+Button b(0);
+
+/* Metodo che viene chiamato solo all'avvio */
+void setup() {
+}
+
+/* Metodo che viene chiamato all'infinito */
+void loop() {
+  /* Prendo lo stato del bottone */
+  bool state = b.getState();
+  /* Se il bottone &egrave; premuto lo faccio lampeggiare, senn&ograve; lo spengo. */
+  if(state) {
+    led.toggle();
+    /* Aspetto 100 millisecondi */
+    delay(100);
+  } else {
+    led.off();
+  }
+}
+    </pre>
+  </body>
+</html>
