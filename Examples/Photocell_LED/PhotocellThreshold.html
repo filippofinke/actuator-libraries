@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>PhotocellThreshold Guida</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filippo Finke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Esempio PhotocellThreshold</h1>
+    <hr>
+    <h2>Descrizione</h2>
+    <p>
+      Circuito che in base al livello di luminosità della fotocellula accende il LED.
+    </p>
+    <hr>
+    <h2>Materiale</h2>
+    <ul>
+      <li>Un Digispark</li>
+      <li>Un led</li>
+      <li>Una fotocellula</li>
+      <li>Una resistenza da 330Ω</li>
+      <li>Una resistenza da 10KΩ</li>
+    </ul>
+    <hr>
+    <h2>Schema</h2>
+    <h3>Descrizione del funzionamento</h3>
+    <p>All’interno del circuito sono presenti quattro componenti: 1 fotocellula, 1 LED e 2 resistenze. La fotocellula è collegata in pull-down attraverso una resistenza da 10kΩ al pin “P3”. Il LED è attaccato al pin “P1” del Digispark attraverso una resistenza da 330Ω. Quando il valore letto dalla fotocellula supera i 100 lux il LED viene acceso, quando scende al di sotto della soglia il LED viene spento.</p>
+    <img src="../../Images/Circuit diagrams/PhotocellLed_bb.svg" alt="ButtonLed">
+    <hr>
+    <h2>Codice</h2>
+    <pre>
+/**
+ * Includo le librerie.
+ */
+#include &#x3C;photocell.h&#x3E;
+#include &#x3C;led.h&#x3E;
+
+/**
+ * Istanzio un oggetto di tipo Photocell.
+ */
+Photocell photocell(4);
+
+/**
+ * Istanzio un oggetto di tipo Led.
+ */
+Led led(1);
+
+/**
+ * Imposto una soglia dopo il quale accendere il led.
+ */
+int soglia = 100;
+
+/**
+ * Metodo di setup, viene eseguito una sola volta.
+ */
+void setup() {
+
+}
+
+/**
+ * Metodo che viene eseguito all&#x27;infinito.
+ */
+void loop() {
+  //Ricavo la luminosit&#xE0;.
+  int lux = photocell.getLux();
+  //Controllo che la luminosit&#xE0; sia maggiore o uguale alla soglia stabilita.
+  if(lux &#x3E;= soglia) {
+    //Accendo il led.
+    led.on();
+  } else {
+    //Spengo il led.
+    led.off();
+  }
+}
+    </pre>
+  </body>
+</html>
