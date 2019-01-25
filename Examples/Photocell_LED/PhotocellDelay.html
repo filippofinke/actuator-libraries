@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>PhotocellDelay Guida</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filippo Finke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Esempio PhotocellDelay</h1>
+    <hr>
+    <h2>Descrizione</h2>
+    <p>
+      Circuito nel quale viene mostrato l'utilizzo di una fotocellula utlizzato come frequenza per il lampeggiamento del LED.
+    </p>
+    <hr>
+    <h2>Materiale</h2>
+    <ul>
+      <li>Un Digispark</li>
+      <li>Un led</li>
+      <li>Una fotocellula</li>
+      <li>Una resistenza da 330Ω</li>
+      <li>Una resistenza da 10KΩ</li>
+    </ul>
+    <hr>
+    <h2>Schema</h2>
+    <h3>Descrizione del funzionamento</h3>
+    <p>All’interno del circuito sono presenti quattro componenti: 1 fotocellula, 1 LED e 2 resistenze. La fotocellula è collegata in pull-down attraverso una resistenza da 10kΩ al pin “P3”. Il LED è attaccato al pin “P1” del Digispark attraverso una resistenza da 330Ω. Il valore letto dalla fotocellula viene assegnato ad un delay che gestisce la frequeza del lampeggiamento del LED.</p>
+    <img src="../../Images/Circuit diagrams/PhotocellLed_bb.svg" alt="ButtonLed">
+    <hr>
+    <h2>Codice</h2>
+    <pre>
+/**
+ * Includo le librerie.
+ */
+#include &#x3C;photocell.h&#x3E;
+#include &#x3C;led.h&#x3E;
+
+/**
+ * Istanzio un oggetto di tipo Photocell.
+ */
+Photocell photocell(4);
+
+/**
+ * Istanzio un oggetto di tipo Led.
+ */
+Led led(1);
+
+/**
+ * Imposto un valore minimo di luminosit&#xE0; della resistenza.
+ */
+int minLux = 0;
+
+/**
+ * Imposto un valore massimo di luminosit&#xE0; della resistenza.
+ */
+int maxLux = 400;
+
+/**
+ * Metodo di setup, viene eseguito una sola volta.
+ */
+void setup() {
+
+}
+
+/**
+ * Metodo che viene eseguito all&#x27;infinito.
+ */
+void loop() {
+  //Ricavo la luminosit&#xE0;.
+  int lux = photocell.getLux();
+  //Converto il valore di luminosit&#xE0; in un altra scala.
+  int delayValue = map(lux, minLux, maxLux, 0, 1023);
+  //Attendo il valore mappato.
+  delay(delayValue);
+  //Imposto la luminosit&#xE0; del led.
+  led.toggle();
+}
+    </pre>
+  </body>
+</html>
