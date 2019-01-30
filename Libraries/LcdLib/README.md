@@ -22,7 +22,7 @@ LiquidCrystal_I2C lcd(address,columns,rows);
 
 ### Metodi
 
-Todo: https://github.com/platisd/ATtiny85-LCD-library/blob/master/LiquidCrystal_ATtiny/LiquidCrystal_attiny.cpp
+[Todo](https://github.com/platisd/ATtiny85-LCD-library/blob/master/LiquidCrystal_ATtiny/LiquidCrystal_attiny.cpp)
 
 ## Esempi
 
