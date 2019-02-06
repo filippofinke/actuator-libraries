@@ -1,19 +1,26 @@
 ## Sistema didattico per Arduino con libreria per attuatori e relativa documentazione.
 ---
 
+#### Mandato:
+Documento di specifica [M-306_QdC_2°progetto_Arduino_2018-19.pdf](M-306_QdC_2°progetto_Arduino_2018-19.pdf)
+
 #### Struttura:
-- [Codice](Codice)
-- [Diari](Diari)
-- [Documentazione](Documentazione)
-- [GANTT](GANTT)
-- [Presentazione](Presentazione)
-
-├───Codice `Cartella nel quale si trova il codice.`  
-├───Diari `Cartella nel quale si trovano i diari.`  
-├───Documentazione `Cartella nel quale si trova la documentazione.`  
-├───GANTT `Cartella nel quale si trovano i GANTT.`  
-└───Presentazione `Cartella nel quale si trova la presentazione.`
-
+- [Circuit Diagrams](Circuit Diagrams)
+  > Cartella nella quale sono presenti tutti gli schemi fritzing dei vari circuiti.
+- [Documentation](Documentation)
+  > Cartella nella quale è salvata la documentazione.
+- [Examples](Examples)
+  > Cartella nella quale sono presenti i 3 esempi per ogni circuito con relative guide.
+- [Gantt Charts](Gantt Charts)
+  > Cartella nella quale sono salvati tutti i diagrammi di gantt.
+- [Images](Images)
+  > Cartella nella quale sono salvate tutte le immagini utilizzate all'interno del progetto.
+- [Libraries](Libraries)
+    > Cartella nella quale sono salvate le librerie.
+- [Presentations](Presentations)
+    > Cartella nella quale sono salvate le presentazioni.
+- [Work Diaries](Work Diaries)
+    > Cartella nella quale sono presenti tutti i dari.
 
 ---
 #### Team di sviluppo
