@@ -8,9 +8,9 @@ Documento di specifica [M-306_QdC_2°progetto_Arduino_2018-19.pdf](M-306_QdC_2°
 - [Circuit Diagrams](Circuit%20Diagrams)
   > Cartella nella quale sono presenti tutti gli schemi fritzing dei vari circuiti.
 - [Documentation](Documentation)
-  > Cartella nella quale è salvata la documentazione.
+  > Cartella nella quale è salvata la documentazione del progetto.
 - [Examples](Examples)
-  > Cartella nella quale sono presenti i 3 esempi per ogni circuito con relative guide.
+  > Cartella nella quale sono presenti i 3 circuiti di esempio per ogni attuatore con relative guide di utilizzo.
 - [Gantt Charts](Gantt%20Charts)
   > Cartella nella quale sono salvati tutti i diagrammi di gantt.
 - [Images](Images)
@@ -20,7 +20,7 @@ Documento di specifica [M-306_QdC_2°progetto_Arduino_2018-19.pdf](M-306_QdC_2°
 - [Presentations](Presentations)
     > Cartella nella quale sono salvate le presentazioni.
 - [Work Diaries](Work%20Diaries)
-    > Cartella nella quale sono presenti tutti i dari.
+    > Cartella nella quale sono presenti tutti i diari.
 
 ---
 #### Team di sviluppo
